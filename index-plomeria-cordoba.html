@@ -1,0 +1,2549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plomería Córdoba | Plomero y Gasista Matriculado</title>
+
+<meta name="description" content="Plomería Córdoba. Plomero y gasista matriculado. Atención 24 horas en Córdoba Capital y alrededores. Plomería, gas y mantenimiento general.">
+
+<!-- FUENTES -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================
+   COLORES
+========================= */
+
+:root{
+    --rojo:#c62828;
+    --rojo-oscuro:#9f1f1f;
+    --azul:#174a78;
+    --azul-claro:#eaf3fa;
+    --amarillo:#f3b51b;
+    --crema:#faf8f3;
+    --blanco:#ffffff;
+    --negro:#171717;
+    --gris:#686868;
+    --borde:#e7e2d9;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Nunito Sans",sans-serif;
+    background:var(--crema);
+    color:var(--negro);
+    line-height:1.6;
+    font-size:17px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:var(--crema);
+    border-bottom:1px solid var(--borde);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav{
+    max-width:1180px;
+    margin:auto;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-nav{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-nav img{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+}
+
+.logo-text strong{
+    display:block;
+    font-family:"Outfit",sans-serif;
+    font-size:19px;
+    font-weight:800;
+    letter-spacing:-.5px;
+}
+
+.logo-text span{
+    font-size:14px;
+    color:var(--gris);
+}
+
+.menu{
+    display:flex;
+    gap:28px;
+    align-items:center;
+    font-size:16px;
+    font-weight:700;
+}
+
+.menu a{
+    transition:.2s;
+}
+
+.menu a:hover{
+    color:var(--rojo);
+}
+
+.nav-button{
+    background:var(--rojo);
+    color:white;
+    padding:12px 19px;
+    border-radius:8px;
+    font-weight:800;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    max-width:1180px;
+    margin:auto;
+    padding:75px 25px 90px;
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:70px;
+    align-items:center;
+}
+
+.hero-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--rojo);
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.hero-kicker::before{
+    content:"";
+    width:30px;
+    height:3px;
+    background:var(--amarillo);
+}
+
+.hero h1{
+    font-family:"Outfit",sans-serif;
+    font-size:clamp(42px,6vw,72px);
+    line-height:1.02;
+    letter-spacing:-2.5px;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:var(--rojo);
+}
+
+.hero-description{
+    max-width:600px;
+    color:var(--gris);
+    font-size:19px;
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+}
+
+.btn-red{
+    background:var(--rojo);
+    color:white;
+    padding:16px 24px;
+    border-radius:8px;
+    font-weight:800;
+    font-size:16px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transition:.2s;
+}
+
+.btn-red:hover{
+    background:var(--rojo-oscuro);
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #bdb8ae;
+    padding:15px 24px;
+    border-radius:8px;
+    font-weight:800;
+    font-size:16px;
+    background:white;
+}
+
+.btn-outline:hover{
+    border-color:var(--azul);
+    color:var(--azul);
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual{
+    position:relative;
+    min-height:450px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-shape{
+    width:360px;
+    height:400px;
+    background:var(--azul);
+    border-radius:45% 45% 12px 12px;
+    position:absolute;
+    transform:rotate(4deg);
+}
+
+.hero-card{
+    position:relative;
+    width:330px;
+    background:white;
+    padding:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,.13);
+    z-index:2;
+    border-radius:12px;
+}
+
+.hero-card img{
+    width:190px;
+    height:190px;
+    object-fit:contain;
+    margin:0 auto 20px;
+}
+
+.hero-card-title{
+    font-family:"Outfit",sans-serif;
+    font-size:23px;
+    text-align:center;
+    font-weight:800;
+}
+
+.hero-card-sub{
+    text-align:center;
+    color:var(--gris);
+    margin-top:5px;
+    font-size:15px;
+}
+
+.hero-badge{
+    position:absolute;
+    right:-35px;
+    top:40px;
+    background:var(--amarillo);
+    padding:16px 18px;
+    font-family:"Outfit",sans-serif;
+    font-size:14px;
+    font-weight:800;
+    transform:rotate(5deg);
+    z-index:3;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    border-radius:6px;
+}
+
+.hero-badge small{
+    display:block;
+    font-family:"Nunito Sans",sans-serif;
+    font-weight:700;
+    font-size:12px;
+}
+
+
+/* =========================
+   INFO BAR
+========================= */
+
+.info-strip{
+    background:var(--negro);
+    color:white;
+}
+
+.info-inner{
+    max-width:1180px;
+    margin:auto;
+    padding:0 25px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.info-item{
+    padding:25px 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-right:1px solid rgba(255,255,255,.15);
+}
+
+.info-item:last-child{
+    border-right:none;
+}
+
+.info-icon{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:var(--rojo);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:21px;
+}
+
+.info-item strong{
+    display:block;
+    font-family:"Outfit",sans-serif;
+    font-size:16px;
+    font-weight:800;
+}
+
+.info-item span{
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section{
+    max-width:1180px;
+    margin:auto;
+    padding:100px 25px;
+}
+
+.section-heading{
+    max-width:700px;
+    margin-bottom:50px;
+}
+
+.eyebrow{
+    color:var(--rojo);
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    margin-bottom:12px;
+}
+
+.section-heading h2{
+    font-family:"Outfit",sans-serif;
+    font-size:clamp(32px,4vw,48px);
+    line-height:1.1;
+    letter-spacing:-1.5px;
+    font-weight:800;
+}
+
+.section-heading p{
+    color:var(--gris);
+    margin-top:15px;
+    font-size:17px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.service{
+    background:white;
+    border:1px solid var(--borde);
+    padding:30px;
+    min-height:220px;
+    position:relative;
+    transition:.25s;
+    border-radius:10px;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(0,0,0,.07);
+}
+
+.service-number{
+    position:absolute;
+    top:22px;
+    right:24px;
+    color:#d5d0c7;
+    font-family:"Outfit",sans-serif;
+    font-size:13px;
+    font-weight:800;
+}
+
+.service-icon{
+    font-size:36px;
+    margin-bottom:20px;
+    line-height:1;
+}
+
+.service h3{
+    font-family:"Outfit",sans-serif;
+    font-size:21px;
+    margin-bottom:9px;
+    font-weight:800;
+}
+
+.service p{
+    color:var(--gris);
+    font-size:16px;
+}
+
+.service.featured{
+    background:var(--rojo);
+    color:white;
+    border-color:var(--rojo);
+}
+
+.service.featured p{
+    color:#ffe8e8;
+}
+
+.service.featured .service-number{
+    color:rgba(255,255,255,.35);
+}
+
+
+/* =========================
+   GAS
+========================= */
+
+.gas-section{
+    background:var(--azul);
+    color:white;
+}
+
+.gas-container{
+    max-width:1180px;
+    margin:auto;
+    padding:90px 25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.gas-label{
+    display:inline-block;
+    background:var(--amarillo);
+    color:var(--negro);
+    padding:7px 12px;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    border-radius:5px;
+}
+
+.gas-container h2{
+    font-family:"Outfit",sans-serif;
+    font-size:clamp(34px,4vw,52px);
+    line-height:1.08;
+    letter-spacing:-2px;
+    font-weight:800;
+}
+
+.gas-container h2 span{
+    color:var(--amarillo);
+}
+
+.gas-container p{
+    color:#d8e4ee;
+    margin-top:20px;
+    max-width:550px;
+    font-size:17px;
+}
+
+.gas-list{
+    margin-top:28px;
+    display:grid;
+    gap:12px;
+}
+
+.gas-list div{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    font-size:16px;
+}
+
+.check{
+    width:27px;
+    height:27px;
+    background:var(--amarillo);
+    color:var(--negro);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-weight:900;
+}
+
+.gas-box{
+    background:white;
+    color:var(--negro);
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 25px 60px rgba(0,0,0,.2);
+}
+
+.gas-box-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.gas-box h3{
+    font-family:"Outfit",sans-serif;
+    font-size:25px;
+    font-weight:800;
+}
+
+.gas-number{
+    background:var(--rojo);
+    color:white;
+    padding:12px;
+    font-family:"Outfit",sans-serif;
+    font-weight:800;
+    font-size:13px;
+    border-radius:5px;
+}
+
+.gas-box p{
+    color:var(--gris);
+    margin:0;
+    font-size:16px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:80px;
+    align-items:center;
+}
+
+.about-big{
+    background:var(--amarillo);
+    padding:50px 35px;
+    position:relative;
+    border-radius:8px;
+}
+
+.about-big strong{
+    font-family:"Outfit",sans-serif;
+    display:block;
+    font-size:65px;
+    line-height:1;
+    font-weight:800;
+}
+
+.about-big span{
+    display:block;
+    margin-top:10px;
+    font-weight:800;
+    font-size:17px;
+}
+
+.about-content h2{
+    font-family:"Outfit",sans-serif;
+    font-size:42px;
+    line-height:1.1;
+    letter-spacing:-1.5px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.about-content p{
+    color:var(--gris);
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+.about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:25px;
+}
+
+.about-point{
+    border-left:3px solid var(--rojo);
+    padding-left:12px;
+    font-weight:800;
+    font-size:16px;
+}
+
+
+/* =========================
+   PHOTOS
+========================= */
+
+.photos-section{
+    background:#f0ede6;
+}
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:15px;
+}
+
+.photo{
+    min-height:260px;
+    background:#dedbd3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#858078;
+    text-align:center;
+    padding:20px;
+    font-size:15px;
+    border-radius:8px;
+}
+
+.photo:first-child{
+    min-height:535px;
+    grid-row:span 2;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+
+/* =========================
+   TRUST
+========================= */
+
+.trust{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.trust-card{
+    background:white;
+    padding:28px 20px;
+    border-top:4px solid var(--rojo);
+    border-radius:5px;
+}
+
+.trust-card strong{
+    display:block;
+    font-family:"Outfit",sans-serif;
+    font-size:18px;
+    margin-bottom:7px;
+    font-weight:800;
+}
+
+.trust-card span{
+    color:var(--gris);
+    font-size:15px;
+}
+
+
+/* =========================
+   ZONE
+========================= */
+
+.zone{
+    background:var(--rojo);
+    color:white;
+}
+
+.zone-inner{
+    max-width:1180px;
+    margin:auto;
+    padding:75px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.zone h2{
+    font-family:"Outfit",sans-serif;
+    font-size:clamp(30px,4vw,45px);
+    line-height:1.1;
+    font-weight:800;
+}
+
+.zone p{
+    margin-top:10px;
+    color:#ffe5e5;
+    font-size:17px;
+}
+
+.zone-button{
+    background:white;
+    color:var(--rojo);
+    padding:16px 24px;
+    font-weight:800;
+    white-space:nowrap;
+    border-radius:7px;
+    font-size:16px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    background:white;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:70px;
+}
+
+.contact-info h2{
+    font-family:"Outfit",sans-serif;
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.contact-info > p{
+    color:var(--gris);
+    margin-bottom:30px;
+    font-size:17px;
+}
+
+.contact-detail{
+    padding:17px 0;
+    border-bottom:1px solid var(--borde);
+}
+
+.contact-detail strong{
+    display:block;
+    font-size:15px;
+    font-weight:800;
+}
+
+.contact-detail span{
+    color:var(--gris);
+    font-size:16px;
+}
+
+.contact-form{
+    background:var(--crema);
+    padding:35px;
+    border:1px solid var(--borde);
+    border-radius:10px;
+}
+
+.contact-form h3{
+    font-family:"Outfit",sans-serif;
+    font-size:24px;
+    margin-bottom:22px;
+    font-weight:800;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.field.full{
+    grid-column:1 / -1;
+}
+
+.field label{
+    font-size:14px;
+    font-weight:800;
+}
+
+.field input,
+.field select,
+.field textarea{
+    border:1px solid #d9d3c9;
+    padding:13px;
+    background:white;
+    font-family:"Nunito Sans",sans-serif;
+    font-size:16px;
+    outline:none;
+    border-radius:6px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+    border-color:var(--rojo);
+}
+
+.field textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.submit{
+    margin-top:18px;
+    border:0;
+    background:var(--rojo);
+    color:white;
+    padding:15px 22px;
+    font-family:"Nunito Sans",sans-serif;
+    font-weight:800;
+    font-size:16px;
+    cursor:pointer;
+    width:100%;
+    border-radius:7px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:white;
+    border-bottom:1px solid var(--borde);
+    padding:22px 5px;
+}
+
+summary{
+    cursor:pointer;
+    font-family:"Outfit",sans-serif;
+    font-weight:700;
+    font-size:17px;
+}
+
+details p{
+    color:var(--gris);
+    margin-top:13px;
+    font-size:16px;
+    padding-right:30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--negro);
+    color:white;
+}
+
+.footer-inner{
+    max-width:1180px;
+    margin:auto;
+    padding:55px 25px 25px;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.footer-brand{
+    max-width:400px;
+}
+
+.footer-brand h2{
+    font-family:"Outfit",sans-serif;
+    font-size:25px;
+    font-weight:800;
+}
+
+.footer-brand p{
+    color:#aaa;
+    font-size:15px;
+    margin-top:10px;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+    font-size:15px;
+    color:#ccc;
+}
+
+.footer-bottom{
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#777;
+    font-size:13px;
+}
+
+
+/* =========================
+   BOTONES FLOTANTES
+========================= */
+
+.botones-flotantes{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    z-index:999;
+}
+
+.whatsapp{
+    width:60px;
+    height:60px;
+    background:#20b85a;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    transition:.2s;
+}
+
+.whatsapp svg{
+    width:34px;
+    height:34px;
+    fill:white;
+}
+
+.whatsapp:hover{
+    transform:scale(1.08);
+}
+
+.llamar{
+    height:55px;
+    padding:0 18px;
+    background:var(--rojo);
+    color:white;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-size:13px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    transition:.2s;
+}
+
+.llamar span{
+    font-size:20px;
+}
+
+.llamar:hover{
+    background:var(--rojo-oscuro);
+    transform:scale(1.04);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media(max-width:850px){
+
+    .menu{
+        display:none;
+    }
+
+    .nav{
+        padding:12px 18px;
+    }
+
+    .nav-button{
+        padding:10px 13px;
+        font-size:13px;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        padding:55px 20px 65px;
+        gap:45px;
+    }
+
+    .hero h1{
+        font-size:43px;
+        letter-spacing:-2px;
+    }
+
+    .hero-description{
+        font-size:17px;
+    }
+
+    .hero-visual{
+        min-height:370px;
+    }
+
+    .hero-shape{
+        width:280px;
+        height:330px;
+    }
+
+    .hero-card{
+        width:285px;
+    }
+
+    .hero-card img{
+        width:155px;
+        height:155px;
+    }
+
+    .hero-badge{
+        right:0;
+    }
+
+    .info-inner{
+        grid-template-columns:1fr;
+    }
+
+    .info-item{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .section{
+        padding:70px 20px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .service p{
+        font-size:16px;
+    }
+
+    .gas-container{
+        grid-template-columns:1fr;
+        padding:70px 20px;
+        gap:45px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-content h2{
+        font-size:34px;
+    }
+
+    .about-points{
+        grid-template-columns:1fr;
+    }
+
+    .photo-grid{
+        grid-template-columns:1fr;
+    }
+
+    .photo,
+    .photo:first-child{
+        min-height:240px;
+        grid-row:auto;
+    }
+
+    .trust{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .zone-inner{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:65px 20px;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .contact-info h2{
+        font-size:34px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .field.full{
+        grid-column:auto;
+    }
+
+    .footer-top{
+        flex-direction:column;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+}
+
+
+@media(max-width:450px){
+
+    .logo-nav img{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text strong{
+        font-size:16px;
+    }
+
+    .logo-text span{
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero-description{
+        font-size:17px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn-red,
+    .btn-outline{
+        justify-content:center;
+        width:100%;
+    }
+
+    .trust{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form{
+        padding:22px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="nav">
+
+<a href="#" class="logo-nav">
+
+<img src="logo.jpeg" alt="Plomería Córdoba">
+
+<div class="logo-text">
+
+<strong>PLOMERÍA CÓRDOBA</strong>
+
+<span>Plomería · Gas · Mantenimiento</span>
+
+</div>
+
+</a>
+
+
+<div class="menu">
+
+<a href="#servicios">Servicios</a>
+
+<a href="#nosotros">Nosotros</a>
+
+<a href="#contacto">Contacto</a>
+
+<a class="nav-button"
+href="https://wa.me/5493512526146"
+target="_blank">
+
+📲 WhatsApp
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div>
+
+<div class="hero-kicker">
+
+Córdoba Capital y alrededores
+
+</div>
+
+
+<h1>
+
+Soluciones para tu hogar.<br>
+
+<span>Trabajo bien hecho las 24 horas del día.</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Servicios de plomería, gas y mantenimiento general con atención rápida y profesional las 24 horas. Atendemos hogares, departamentos, consorcios, inmobiliarias y comercios.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="https://wa.me/5493512526146?text=Hola%2C%20quiero%20consultar%20por%20un%20servicio%20de%20plomer%C3%ADa."
+target="_blank"
+class="btn-red">
+
+📲 Consultar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-visual">
+
+<div class="hero-shape"></div>
+
+
+<div class="hero-card">
+
+<img src="logo.jpeg" alt="Plomería Córdoba">
+
+
+<div class="hero-card-title">
+
+Plomería Córdoba
+
+</div>
+
+
+<div class="hero-card-sub">
+
+Servicio profesional · Atención 24 horas
+
+</div>
+
+</div>
+
+
+<div class="hero-badge">
+
+24 HORAS
+
+<small>Atención</small>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     INFO
+========================= -->
+
+<div class="info-strip">
+
+<div class="info-inner">
+
+
+<div class="info-item">
+
+<div class="info-icon">⏰</div>
+
+<div>
+
+<strong>Atención 24 horas</strong>
+
+<span>Todos los días</span>
+
+</div>
+
+</div>
+
+
+
+<div class="info-item">
+
+<div class="info-icon">📍</div>
+
+<div>
+
+<strong>Córdoba Capital</strong>
+
+<span>Y alrededores</span>
+
+</div>
+
+</div>
+
+
+
+<div class="info-item">
+
+<div class="info-icon">🛡️</div>
+
+<div>
+
+<strong>Trabajo profesional</strong>
+
+<span>Serio y responsable</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+     SERVICIOS
+========================= -->
+
+<section class="section" id="servicios">
+
+
+<div class="section-heading">
+
+<div class="eyebrow">
+
+Qué hacemos
+
+</div>
+
+
+<h2>
+
+Todo lo que necesitás en un solo servicio.
+
+</h2>
+
+
+<p>
+
+Soluciones de plomería, gas e instalaciones para hogares, comercios y consorcios.
+
+</p>
+
+</div>
+
+
+
+<div class="services">
+
+
+
+<div class="service featured">
+
+<div class="service-number">01</div>
+
+<div class="service-icon">💧</div>
+
+<h3>Plomería</h3>
+
+<p>
+
+Reparación de pérdidas, cañerías, llaves de paso e instalaciones de agua.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">02</div>
+
+<div class="service-icon">🚽</div>
+
+<h3>Sanitarios</h3>
+
+<p>
+
+Instalación y reparación de inodoros, mochilas, sanitarios y accesorios.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">03</div>
+
+<div class="service-icon">🚿</div>
+
+<h3>Griferías y duchas</h3>
+
+<p>
+
+Cambio e instalación de canillas, duchas, griferías y conexiones.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">04</div>
+
+<div class="service-icon">🪠</div>
+
+<h3>Destapaciones</h3>
+
+<p>
+
+Destape de cañerías y desagües con atención rápida.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">05</div>
+
+<div class="service-icon">🔥</div>
+
+<h3>Calefones</h3>
+
+<p>
+
+Instalación, reparación y mantenimiento de calefones y termotanques.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">06</div>
+
+<div class="service-icon">🏠</div>
+
+<h3>Instalaciones</h3>
+
+<p>
+
+Instalaciones de agua y gas para obras nuevas, reformas y viviendas.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">07</div>
+
+<div class="service-icon">🏢</div>
+
+<h3>Consorcios</h3>
+
+<p>
+
+Mantenimiento y trabajos de plomería para edificios y espacios comunes.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">08</div>
+
+<div class="service-icon">🏪</div>
+
+<h3>Comercios</h3>
+
+<p>
+
+Soluciones para locales, negocios y establecimientos.
+
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-number">09</div>
+
+<div class="service-icon">🛠️</div>
+
+<h3>Mantenimiento</h3>
+
+<p>
+
+Reparaciones y mantenimiento general para diferentes necesidades.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     GASISTA
+========================= -->
+
+<section class="gas-section">
+
+<div class="gas-container">
+
+
+<div>
+
+<div class="gas-label">
+
+Gasista matriculado
+
+</div>
+
+
+<h2>
+
+Instalaciones de gas con <span>responsabilidad y seguridad.</span>
+
+</h2>
+
+
+<p>
+
+Realizamos instalaciones, reparaciones y revisiones de gas. Contamos con gasista matriculado de Categoría 3.
+
+</p>
+
+
+<div class="gas-list">
+
+
+<div>
+
+<span class="check">✓</span>
+
+Cambio de bisagras de hornos
+
+</div>
+
+
+<div>
+
+<span class="check">✓</span>
+
+Instalaciones de gas
+
+</div>
+
+
+<div>
+
+<span class="check">✓</span>
+
+Reparaciones
+
+</div>
+
+
+<div>
+
+<span class="check">✓</span>
+
+Revisiones
+
+</div>
+
+
+<div>
+
+<span class="check">✓</span>
+
+Calefones y termotanques
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="gas-box">
+
+<div class="gas-box-top">
+
+<h3>Gasista matriculado</h3>
+
+<div class="gas-number">
+
+CATEGORÍA 3
+
+</div>
+
+</div>
+
+
+<p>
+
+Trabajamos priorizando la seguridad, el correcto funcionamiento de las instalaciones y una atención profesional.
+
+</p>
+
+
+<br>
+
+
+<a
+href="https://wa.me/5493512526146?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20gas."
+target="_blank"
+class="btn-red">
+
+📲 Consultar servicio
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     NOSOTROS
+========================= -->
+
+<section class="section" id="nosotros">
+
+
+<div class="about">
+
+
+<div class="about-big">
+
+<strong>24</strong>
+
+<span>HORAS DE ATENCIÓN</span>
+
+</div>
+
+
+
+<div class="about-content">
+
+
+<div class="eyebrow">
+
+Sobre nosotros
+
+</div>
+
+
+<h2>
+
+Una solución rápida cuando más la necesitás.
+
+</h2>
+
+
+<p>
+
+Plomería Córdoba brinda servicios de plomería, gas y mantenimiento general en Córdoba Capital y alrededores.
+
+</p>
+
+
+<p>
+
+Trabajamos para resolver cada problema de manera responsable, prolija y profesional, buscando que cada cliente reciba una atención clara desde el primer contacto.
+
+</p>
+
+
+<div class="about-points">
+
+
+<div class="about-point">
+
+Atención rápida
+
+</div>
+
+
+<div class="about-point">
+
+Trabajo prolijo
+
+</div>
+
+
+<div class="about-point">
+
+Presupuesto previo
+
+</div>
+
+
+<div class="about-point">
+
+Atención profesional
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FOTOS
+========================= -->
+
+<section class="photos-section">
+
+
+<div class="section">
+
+
+<div class="section-heading">
+
+<div class="eyebrow">
+
+Nuestros trabajos
+
+</div>
+
+
+<h2>
+
+Trabajos reales, soluciones reales.
+
+</h2>
+
+
+<p>
+
+Próximamente vas a poder ver fotos de trabajos realizados.
+
+</p>
+
+</div>
+
+
+
+<div class="photo-grid">
+
+
+<div class="photo">
+
+📸<br>
+
+Espacio para foto de trabajo
+
+</div>
+
+
+<div class="photo">
+
+📸<br>
+
+Espacio para foto
+
+</div>
+
+
+<div class="photo">
+
+📸<br>
+
+Espacio para foto
+
+</div>
+
+
+<div class="photo">
+
+📸<br>
+
+Espacio para foto
+
+</div>
+
+
+<div class="photo">
+
+📸<br>
+
+Espacio para foto
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONFIANZA
+========================= -->
+
+<section class="section">
+
+
+<div class="section-heading">
+
+<div class="eyebrow">
+
+¿Por qué elegirnos?
+
+</div>
+
+
+<h2>
+
+Lo importante es hacer el trabajo correctamente.
+
+</h2>
+
+</div>
+
+
+
+<div class="trust">
+
+
+<div class="trust-card">
+
+<strong>⏰ Atención 24 hs</strong>
+
+<span>
+
+Respondemos consultas durante todo el día.
+
+</span>
+
+</div>
+
+
+
+<div class="trust-card">
+
+<strong>🛡️ Matriculado</strong>
+
+<span>
+
+Gasista matriculado Categoría 3.
+
+</span>
+
+</div>
+
+
+
+<div class="trust-card">
+
+<strong>📋 Presupuesto</strong>
+
+<span>
+
+Consultá por tu trabajo antes de contratar.
+
+</span>
+
+</div>
+
+
+
+<div class="trust-card">
+
+<strong>🔧 Profesionalidad</strong>
+
+<span>
+
+Responsabilidad y prolijidad en cada trabajo.
+
+</span>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ZONA
+========================= -->
+
+<section class="zone">
+
+
+<div class="zone-inner">
+
+
+<div>
+
+<h2>
+
+¿Necesitás un plomero?
+
+</h2>
+
+
+<p>
+
+Córdoba Capital y alrededores · Atención 24 horas
+
+</p>
+
+</div>
+
+
+<a
+href="https://wa.me/5493512526146?text=Hola%2C%20necesito%20un%20plomero."
+target="_blank"
+class="zone-button">
+
+📲 Hablar por WhatsApp →
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section class="contact-section">
+
+
+<div class="section" id="contacto">
+
+
+<div class="contact">
+
+
+<div class="contact-info">
+
+
+<div class="eyebrow">
+
+Contacto
+
+</div>
+
+
+<h2>
+
+Contanos qué necesitás.
+
+</h2>
+
+
+<p>
+
+Mandanos tu consulta y te contactamos por WhatsApp.
+
+</p>
+
+
+
+<div class="contact-detail">
+
+<strong>📲 WhatsApp</strong>
+
+<span>351 252-6146</span>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<strong>📍 Zona</strong>
+
+<span>Córdoba Capital y alrededores</span>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<strong>⏰ Atención</strong>
+
+<span>24 horas</span>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<strong>🔧 Servicios</strong>
+
+<span>Plomería · Gas · Mantenimiento</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="contact-form">
+
+
+<h3>Solicitar presupuesto</h3>
+
+
+<form id="contactForm">
+
+
+<div class="form-grid">
+
+
+<div class="field">
+
+<label>Nombre</label>
+
+<input
+type="text"
+id="nombre"
+placeholder="Tu nombre"
+required>
+
+</div>
+
+
+
+<div class="field">
+
+<label>Teléfono</label>
+
+<input
+type="tel"
+id="telefono"
+placeholder="Tu teléfono"
+required>
+
+</div>
+
+
+
+<div class="field full">
+
+<label>¿Qué necesitás?</label>
+
+
+<select id="servicio" required>
+
+<option value="">Seleccioná un servicio</option>
+
+<option>Plomería</option>
+
+<option>Destapación</option>
+
+<option>Sanitarios</option>
+
+<option>Griferías</option>
+
+<option>Calefón / Termotanque</option>
+
+<option>Gas</option>
+
+<option>Instalación de agua</option>
+
+<option>Instalación de gas</option>
+
+<option>Mantenimiento general</option>
+
+<option>Otro</option>
+
+</select>
+
+</div>
+
+
+
+<div class="field full">
+
+<label>Dirección</label>
+
+<input
+type="text"
+id="direccion"
+placeholder="Zona o dirección">
+
+</div>
+
+
+
+<div class="field full">
+
+<label>Contanos brevemente el problema</label>
+
+<textarea
+id="mensaje"
+placeholder="Ej.: tengo una pérdida debajo de la pileta..."></textarea>
+
+</div>
+
+
+</div>
+
+
+<button
+type="submit"
+class="submit">
+
+📲 Enviar consulta por WhatsApp
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<div class="eyebrow">
+
+Preguntas frecuentes
+
+</div>
+
+
+<h2>
+
+Lo que suelen consultarnos.
+
+</h2>
+
+</div>
+
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>⏰ ¿Trabajan las 24 horas?</summary>
+
+<p>
+
+Sí. Brindamos atención durante las 24 horas.
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>📍 ¿Trabajan en Córdoba Capital?</summary>
+
+<p>
+
+Sí. Trabajamos en Córdoba Capital y alrededores.
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>🔥 ¿Realizan trabajos de gas?</summary>
+
+<p>
+
+Sí. Contamos con gasista matriculado de Categoría 3 para instalaciones, reparaciones y revisiones.
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>🏢 ¿Trabajan para consorcios y comercios?</summary>
+
+<p>
+
+Sí. Realizamos trabajos para hogares, departamentos, consorcios, inmobiliarias y comercios.
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>📲 ¿Cómo solicito un presupuesto?</summary>
+
+<p>
+
+Podés escribirnos directamente por WhatsApp y contarnos qué trabajo necesitás.
+
+</p>
+
+</details>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+
+<div class="footer-inner">
+
+
+<div class="footer-top">
+
+
+<div class="footer-brand">
+
+
+<h2>PLOMERÍA CÓRDOBA</h2>
+
+
+<p>
+
+Plomería, gas y mantenimiento general. Córdoba Capital y alrededores.
+
+</p>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<a href="#servicios">Servicios</a>
+
+<a href="#nosotros">Nosotros</a>
+
+<a href="#contacto">Contacto</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+
+<span>
+
+© 2026 Plomería Córdoba
+
+</span>
+
+
+<span>
+
+Plomería · Gas · Mantenimiento
+
+</span>
+
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================
+     BOTONES FLOTANTES
+========================= -->
+
+<div class="botones-flotantes">
+
+
+<a
+href="https://wa.me/5493512526146"
+target="_blank"
+class="whatsapp"
+aria-label="WhatsApp">
+
+
+<svg
+viewBox="0 0 32 32"
+aria-hidden="true">
+
+<path d="M16 3C8.82 3 3 8.82 3 16c0 2.29.6 4.44 1.74 6.34L3 29l6.82-1.69A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.6c-1.99 0-3.94-.53-5.65-1.53l-.4-.24-4.05 1 1.08-3.95-.26-.41A10.48 10.48 0 1 1 16 26.6zm5.77-7.86c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.15-.15.32-.38.49-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.3 3.51 5.57 4.92.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.13-.3-.21-.62-.37z"/>
+
+</svg>
+
+</a>
+
+
+
+<a
+href="tel:+5493512526146"
+class="llamar"
+aria-label="Llamar ahora">
+
+<span>📞</span>
+
+<strong>LLAMAR AHORA</strong>
+
+</a>
+
+
+</div>
+
+
+
+<!-- =========================
+     WHATSAPP FORMULARIO
+========================= -->
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+
+const nombre =
+document.getElementById("nombre").value;
+
+const telefono =
+document.getElementById("telefono").value;
+
+const servicio =
+document.getElementById("servicio").value;
+
+const direccion =
+document.getElementById("direccion").value;
+
+const mensaje =
+document.getElementById("mensaje").value;
+
+
+const texto =
+
+"Hola, quiero solicitar un presupuesto.%0A%0A" +
+
+"Nombre: " + nombre + "%0A" +
+
+"Teléfono: " + telefono + "%0A" +
+
+"Servicio: " + servicio + "%0A" +
+
+"Dirección: " + direccion + "%0A" +
+
+"Detalle: " + mensaje;
+
+
+window.open(
+
+"https://wa.me/5493512526146?text=" + texto,
+
+"_blank"
+
+);
+
+});
+
+</script>
+
+
+</body>
+</html>
